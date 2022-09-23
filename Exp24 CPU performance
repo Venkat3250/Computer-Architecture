@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+ float cr;
+ int p,p1,i;
+ float cpu[5];
+ float cpi,ct,max;
+ int n=1000;
+for(i=0;i<=4;i++)
+{
+Cpu[5]=0;
+}
+Printf(“\n enter the number of processors:”);
+Scanf(“%d”,&p);
+P1=p;
+for(i=0;i<p;i++)
+{ 
+ printf(“\n enter the cycles per instruction of 
+processor:”);
+scanf(“%f”,&cpi);
+printf(“\n enter the clockrate in GHZ:”);
+scanf(“%f”,cr);
+ct=1000*cpi/cr;
+printf(“the cpu time is:%f”,ct);
+cpu[i]=ct;
+}
+max=cpu[0];
+//printf(“%f”,max);
+for(i=0;i<p1;i++)
+{
+ if(cpu[i]<=max)
+max=cpu[i];
+}
+Printf(“\n the processor has lowest execution time 
+is:%f”,max);
+return 0;
+}
